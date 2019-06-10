@@ -1,4 +1,5 @@
-
+Monitoring procedure example
+============================
 
 This is a repository accompanying a blog post about how to create custom metrics in Neo4j and publish them to Prometheus
 
@@ -12,3 +13,18 @@ and you have to add a container-license-acceptance.txt file to the root director
 "neo4j:3.5.0-enterprise" in one line. With this you will accept the license terms and conditions.
 You'll find more information about licensing Neo4j here: [About Neo4j Licenses](https://neo4j.com/licensing/).
 If you are interested in a license, you can contact us directly at [GraphAware](mailto:info@graphaware.com).
+
+Building
+--------
+This project uses maven, to build a jar-file with the example procedure. To produce the jar simply package the project with maven:
+
+    mvn clean package
+
+This will produce a jar-file,`target/monitoring-procedure-examle.jar`,
+that can be deployed into the `plugin` directory of your Neo4j instance.
+
+Invoking the procedure
+----------------------
+When you deployed the procedure, you can call it from the Neo4j browser:
+
+    call example.monitoring
