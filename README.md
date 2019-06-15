@@ -2,7 +2,9 @@ Monitoring procedure example
 ============================
 
 This is a repository accompanying a blogs post about how to create custom metrics in Neo4j and publish them to Prometheus, and visualise them in Grafana.
+
 [Monitoring Neo4j and Procedures with Prometheus and Grafana - Part 1](https://graphaware.com/neo4j/2019/06/11/monitoring-neo4j-prometheus.html)
+
 [Monitoring Neo4j and Procedures with Prometheus and Grafana - Part 2](https://graphaware.com/neo4j/2019/06/14/monitoring-neo4j-prometheus-part-2.html)
 
 This repository contains a single module, where we have an example procedure with our own custom metrics published to Prometheus on the same URl as the Neo4j metrics.
